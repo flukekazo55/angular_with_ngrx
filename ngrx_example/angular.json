@@ -115,5 +115,7 @@
       }
     }
   },
-  "defaultProject": "ngrx_example"
+  "cli": {
+    "analytics": "f4d1bc6f-96ca-47c4-a8fe-f03d391c377e"
+  }
 }
