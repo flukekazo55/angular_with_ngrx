@@ -1,19 +1,15 @@
 import { Component } from '@angular/core';
-import { MoveDirection, ClickMode, HoverMode, OutMode, Container, Engine } from "tsparticles-engine";
-import { loadFull } from "tsparticles";
+import { loadFull } from 'tsparticles';
+import { ClickMode, HoverMode, MoveDirection, OutMode, Container, Engine } from 'tsparticles-engine';
 
 @Component({
-  selector: 'app-landing',
-  templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class LandingComponent {
+export class LoginComponent {
   id = "tsparticles";
 
-  /* Starting from 1.19.0 you can use a remote url (AJAX request) to a JSON with the configuration */
-  particlesUrl = "http://foo.bar/particles.json";
-
-  /* or the classic JavaScript object */
   particlesOptions = {
     background: {
       color: {
@@ -45,10 +41,10 @@ export class LandingComponent {
     },
     particles: {
       color: {
-        value: "#000000",
+        value: "#81C6E8",
       },
       links: {
-        color: "#000000",
+        color: "#7DE5ED",
         distance: 150,
         enable: true,
         opacity: 0.5,
@@ -64,7 +60,7 @@ export class LandingComponent {
           default: OutMode.bounce,
         },
         random: false,
-        speed: 2,
+        speed: 1,
         straight: false,
       },
       number: {
@@ -81,24 +77,15 @@ export class LandingComponent {
         type: "circle",
       },
       size: {
-        value: { min: 1, max: 10 },
+        value: { min: 4, max: 4 },
       },
     },
     detectRetina: true,
   };
 
-  particlesLoaded(container: Container): void {
-    
-    console.log(container);
-  }
+  particlesLoaded(container: Container): void { }
 
   async particlesInit(engine: Engine): Promise<void> {
-    console.log(engine);
-
-    // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }
 }
-

@@ -1,0 +1,12 @@
+<div class="login-div">
+    <!-- BG -->
+    <div class="bg-div">
+        <ng-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit"
+            (particlesLoaded)="particlesLoaded($event)">
+        </ng-particles>
+    </div>
+    <!-- FORM -->
+    <div class="form-div">
+        <app-login-form></app-login-form>
+    </div>
+</div>
