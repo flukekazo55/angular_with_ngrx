@@ -1,0 +1,22 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "brand": "Nissan",
+      "model": "Kick",
+      "price": 900000
+    },
+    {
+      "id": 2,
+      "brand": "Nissan",
+      "model": "March",
+      "price": 600000
+    },
+    {
+      "id": 3,
+      "brand": "Nissan",
+      "model": "Teana",
+      "price": 1000000
+    }
+  ]
+}

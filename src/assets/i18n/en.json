@@ -1,6 +1,0 @@
-{
-    "%main.label.navbar%": "Angular With NgRx",
-    "%login.label.username%": "Username",
-    "%login.label.password%": "Password",
-    "%login.label.forgetPassword%": "Forget Password?"
-}

@@ -1,2 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+
+.btn-primary {
+    border: 1px solid #7de5ed;
+    background-color: #5837D0;
+    color: #ffffff;
+
+    &:hover {
+        border: 1px solid #7de5ed;
+        background-color: #5837D0;
+        color: #ffffff;
+    }
+}
+
+.btn-warning {
+    color: #ffffff;
+
+    &:hover {
+        color: #ffffff;
+    }
+}

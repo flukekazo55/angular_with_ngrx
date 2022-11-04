@@ -1,0 +1,30 @@
+<form class="container mt-4" [formGroup]="carForm" (ngSubmit)="insert()">
+    <!-- HEADER -->
+    <legend>Add A New Car</legend>
+    <!-- BRAND INPUT -->
+    <div class="mb-3">
+        <label for="brandName" class="form-label">Brand Name</label>
+        <input type="text" formControlName="brand" class="form-control" id="brandName" />
+    </div>
+    <!-- MODEL INPUT -->
+    <div class="mb-3">
+        <label for="modelName" class="form-label">Model</label>
+        <input type="text" formControlName="model" class="form-control" id="modelName" />
+    </div>
+    <!-- PRICE INPUT -->
+    <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" formControlName="price" class="form-control" id="price" />
+    </div>
+    <!-- BTN -->
+    <div class="d-flex justify-content-between">
+        <!-- BACK BTN -->
+        <div>
+            <button type="button" class="btn btn-light mt-4" routerLink="/">Back</button>
+        </div>
+        <!-- UPDATE BTN -->
+        <div>
+            <button type="submit" class="btn btn-primary mt-4">Insert</button>
+        </div>
+    </div>
+</form>
