@@ -11,7 +11,6 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { appReducer } from './shared/stores/app.reducer';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [

@@ -1,5 +1,6 @@
 <div class="p-5">
     <div class="d-flex justify-content-end mb-4">
+        <!-- INSERT -->
         <button class="btn btn-primary" routerLink="/add">
             Add Cars
         </button>
@@ -30,9 +31,11 @@
                 </td>
                 <td>
                     <div class="d-flex justify-content-center">
+                        <!-- EDIT -->
                         <button class="btn btn-warning mx-3" [routerLink]="['/edit', row.id]">
                             Edit Car
                         </button>
+                        <!-- DELETE -->
                         <button class="btn btn-danger mx-3" (click)="deleteDialog(row.id)">
                             Delete Car
                         </button>

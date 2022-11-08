@@ -7,7 +7,7 @@ import { Cars } from 'src/app/shared/interfaces/cars';
 import { setAPIStatus } from 'src/app/shared/stores/app.action';
 import { selectAppState } from 'src/app/shared/stores/app.selector';
 import { Appstate } from 'src/app/shared/stores/appstate';
-import { invokeSaveNewCarAPI, invokeUpdateCarAPI } from 'src/app/shared/stores/cars/cars.action';
+import {invokeUpdateCarAPI } from 'src/app/shared/stores/cars/cars.action';
 import { selectCarById } from 'src/app/shared/stores/cars/cars.selector';
 
 @Component({
@@ -54,7 +54,7 @@ export class CarEditFormComponent implements OnInit {
     });
   }
 
-  insert() {
+  update() {
     if (this.carForm.valid) {
       this.store.dispatch(
         invokeUpdateCarAPI({ updateCar: { ...this.carForm.value } })
